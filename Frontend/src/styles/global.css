@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0a0a15 0%, #1a1a2e 50%, #0f3460 100%);
+  font-family: sans-serif;
+  min-height: 100vh;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="5" fill="%2300f5d4"/><circle cx="16" cy="16" r="10" fill="none" stroke="%2300f5d4" stroke-width="1" opacity="0.5"/></svg>') 16 16, auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, button {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="%2300f5d4"/><circle cx="16" cy="16" r="12" fill="none" stroke="%2300f5d4" stroke-width="1.5" opacity="0.6"/></svg>') 16 16, pointer;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%) translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+button {
+  transition: all 0.3s ease;
+}
